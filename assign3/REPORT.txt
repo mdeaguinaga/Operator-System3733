@@ -1,0 +1,31 @@
+I have implemented part 3.
+
+1. Alberto Jasso (medium).
+   Mark Pena (medium).
+   This assigment has being dificult overall, I had to do a lot of independent research, at the begining the indications were a little bit confusing but after the professor eplain us, it wasent that dificult.
+
+2. Everithing is working fine and it should be correct. I provide a make file because I had problem compiling because I'm using math opperations and fore some reason include<math.h> was not compiling, so with the makefile that I  provide, it should be working OK.
+
+EXTRA COMMENTS: the way to run the programs will be 
+
+        ./a3p1 part1sequence            .............  for part 1
+        ./a3p2 part2sequence            .............  for part 2
+        ./a3p3 256 4096 1024 part2sequence  .........  for part 3
+
+3. How I mention before, I use some math operations but math.h wasn't working for log so I provide a makefile that will compale everithing correct so please use the makefile prodvided. All outputsare showing correct at this point, just the second output for the 3th part is showing diferent.
+
+4. I thing this assigment was a little bit complicated so I sudgest to provide more ditails in order to understand it better at the begining and don't have to wait for the professor's description
+
+5. 
+fox02:~/cs3733/assign3> md5sum output-part1
+ceabc02825a5b908e474b053074ab53c  output-part1
+
+fox02:~/cs3733/assign3> md5sum output-part2
+c95b27848ae8d4354d87678d075001f7  output-part2
+
+fox02:~/cs3733/assign3> md5sum output-part3
+d34ec1b7d6aaa8d6eb093b9b95c8e094  output-part3
+
+fox02:~/cs3733/assign3> md5sum output-part3
+87807c742d573a107fa6041e50dc957c  output-part3
+
