@@ -1,0 +1,59 @@
+fox01:~/cs3733/RecC2> ./RecC2 -alg FIFO -input input1.txt
+Student Name: Manuel I. De Aguinaga
+Input File Name : input1.txt
+CPU Scheduling Alg : FIFO
+
+Proces 1 is completed at 5 ms
+Proces 2 is completed at 12 ms
+Proces 3 is completed at 18 ms
+Proces 4 is completed at 22 ms
+
+Average Waiting time =  7.75 ms     (31/4)
+Average Turnaround time = 14.25 ms  (57/4)
+Throughput = 0.18 jobs per ms       (4/22)
+
+
+fox01:~/cs3733/RecC2> ./RecC2 -alg SJF -input input1.txt
+Student Name: Manuel I. De Aguinaga
+Input File Name : input1.txt
+CPU Scheduling Alg : SJF
+
+Proces 4 is completed at 4 ms
+Proces 1 is completed at 9 ms
+Proces 3 is completed at 15 ms
+Proces 2 is completed at 22 ms
+
+Average Waiting time =  6.00 ms     (24/4)
+Average Turnaround time = 12.50 ms  (50/4)
+Throughput = 0.18 jobs per ms       (4/22)
+
+
+fox01:~/cs3733/RecC2> ./RecC2 -alg PR -input input1.txt
+Student Name: Manuel I. De Aguinaga
+Input File Name : input1.txt
+CPU Scheduling Alg : PR
+
+Proces 2 is completed at 7 ms
+Proces 3 is completed at 13 ms
+Proces 1 is completed at 18 ms
+Proces 4 is completed at 22 ms
+
+Average Waiting time =  8.50 ms     (34/4)
+Average Turnaround time = 15.00 ms  (60/4)
+Throughput = 0.18 jobs per ms       (4/22)
+
+
+fox01:~/cs3733/RecC2> ./RecC2 -p RR 2 -f input1.txt 
+Student Name: Manuel I. De Aguinaga
+Input File Name : input1.txt
+CPU Scheduling Alg : RR
+
+Proces 4 is completed at 16 ms
+Proces 1 is completed at 17 ms
+Proces 3 is completed at 21 ms
+Proces 2 is completed at 22 ms
+
+Average Waiting time =  10.50 ms     (42/4)
+Average Turnaround time = 19.00 ms  (76/4)
+Throughput = 0.18 jobs per ms       (4/22)
+
