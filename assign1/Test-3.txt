@@ -1,0 +1,7 @@
+Assignment 1 program was written by Manuel I. De Aguinaga
+inputs: 4 8 7 3 6 1 2
+
+Part 1
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwrrrRR
+0 11 5.5 0.95000

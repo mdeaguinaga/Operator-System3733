@@ -1,0 +1,25 @@
+
+Mark Pena(large) 
+Alberto Jasso(large)
+We were working separate, we just share some ideas of how the assigment could be more
+efficient, like using arrays instead of just regular variables, and is we showld be using 
+LinkList instead of arrays for dinamic alocation
+
+2)
+Everithing is working fine, 
+
+
+3)
+N/A
+
+4)
+The challenging part was trying to figure out how to be working on bouth prosses at the
+same time, but after puting the ideas on paper, it started to make sense
+
+5)
+fox01:~/cs3733/assign1> ls -l fcfsa.all 
+-rw------- 1 uyi362 students 44344517 Feb  4 14:02 fcfsa.all
+fox01:~/cs3733/assign1> wc fcfsa.all 
+2000001  2000003 44344517 fcfsa.all
+fox01:~/cs3733/assign1> md5sum fcfsa.all 
+ca6f6876a9d3049247ebc1146cf9be8d  fcfsa.all
