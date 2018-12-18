@@ -1,0 +1,28 @@
+We were working separate, we just share some ideas of how the assigment coud be more
+Mark Pena(large)
+Alberto Jasso(large)
+
+2. Yes, If I understend correcly, I think everything you did is correct 
+
+3. N/A 
+
+4. The challenging part was trying to figure out how to be working on bouth prosses at the same time, but after puting the ideas on paper, it started to make sense.
+
+5. Program output:
+
+fox01:~/cs3733/assign2> ls -l *.all
+-rw------- 1 uyi362 students 44344517 Feb 24 10:59 fcfs.all
+-rw------- 1 uyi362 students 42267266 Feb 24 10:59 psjf.all
+-rw------- 1 uyi362 students 46409196 Feb 24 10:59 rr.all
+-rw------- 1 uyi362 students 43243801 Feb 24 10:59 sjf.all
+fox01:~/cs3733/assign2> wc *.all
+2000001   2000003  44344517 fcfs.all
+2000001   2000003  42267266 psjf.all
+2000001   2000003  46409196 rr.all
+2000001   2000003  43243801 sjf.all
+8000004   8000012 176264780 total
+fox01:~/cs3733/assign2> md5sum *.all
+ca6f6876a9d3049247ebc1146cf9be8d  fcfs.all
+385126a67b78e5c4c8b1351961de0da6  psjf.all
+0d9f1d3a30869d4e5b64f521f9ac7910  rr.all
+23f74dc6923b9601d2d54bbe0287278b  sjf.all
