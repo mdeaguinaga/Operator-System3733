@@ -1,0 +1,21 @@
+Manuel Israel de Aguinaga
+
+6- Total size is wrong because the parent process ran before child and it did not wait for it
+
+7- The pront out will be child process forst, then parent process and total at the end than will be 2356
+
+8- For me the result looks fine, no errors were made.
+
+9- The program now is running different because the process never created a seconf proces that will be added before the first process or thread ends ends  
+
+10- The program now is running different because the process never created a seconf proces that will be added before the first process or thread ends ends  
+
+
+
+fox02:~/cs3733/recE>  make runthread
+getsizesthread getsizeschild.c getsizesthread.c
+Size of getsizeschild.c is 1091
+Size of getsizesthread.c is 1265
+Total size is 2356
+
+
