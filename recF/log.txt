@@ -1,0 +1,273 @@
+fox02:~/cs3733/recF> make
+cc  -o countertest countertest.c counter.c -lpthread
+fox02:~/cs3733/recF> ./countertest 10 100
+incthread started: 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread done
+incthread started: 100
+incthread started: 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread done
+incthread done
+incthread done
+Count should be 1000
+Count is        1000
+
+7***************************************************
+fox01:~/cs3733/recF> countertest 10 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread started: 1000000
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+Count should be 10000000
+Count is        10000000
+fox01:~/cs3733/recF> countertest 10 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread started: 10000000
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+Count should be 100000000
+Count is        100000000
+fox01:~/cs3733/recF> 
+
+8*******************************************************
+ncthread started: 100000
+incthread started: 100000
+incthread done
+incthread done
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread done
+incthread done
+incthread started: 100000
+incthread done
+incthread started: 100000
+incthread started: 100000
+incthread done
+incthread started: 100000
+incthread done
+incthread done
+incthread done
+incthread done
+Count should be 1000000
+Count is        402273
+fox01:~/cs3733/recF> ./countertest 10 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+Count should be 1000
+Count is        1000
+
+9*******************************************************
+
+fox01:~/cs3733/recF> make
+cc  -o countertest countertest.c counter.c -lpthread
+fox01:~/cs3733/recF> ./countertest 10 100
+incthread started: 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+Count should be 1000
+Count is        0
+fox01:~/cs3733/recF> ./countertest 10 100000
+incthread started: 100000
+incthread started: 100000
+incthread done
+incthread done
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread done
+incthread done
+incthread started: 100000
+incthread done
+incthread done
+incthread done
+incthread started: 100000
+incthread done
+incthread started: 100000
+incthread done
+incthread done
+Count should be 1000000
+Count is        0
+fox01:~/cs3733/recF> 
+
+10**********************************************************************
+
+fox01:~/cs3733/recF> ./countertest 10 100
+incthread started: 100
+incthread started: 100
+incthread started: 100
+incthread started: 100
+incthread done
+incthread done
+incthread done
+incthread started: 100
+incthread started: 100
+incthread done
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread done
+incthread done
+Count should be 1000
+Count is        0
+fox01:~/cs3733/recF> ./countertest 10 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+Count should be 1000000
+Count is        0
+
+**********************************************************************
+
+fox01:~/cs3733/recF> ./countertest 10 100
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread done
+incthread started: 100
+incthread started: 100
+incthread done
+incthread done
+Count should be 1000
+Count is        0
+fox01:~/cs3733/recF> ./countertest 10 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread started: 100000
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+incthread done
+Count should be 1000000
+Count is        0
+fox01:~/cs3733/recF> 
+
