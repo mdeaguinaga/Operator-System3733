@@ -1,0 +1,23 @@
+fox01:~/cs3733/assign0> ./driver1 3 3 3
+Enter an integer: 1
+1
+Enter an integer: 4
+4
+Enter an integer: 8
+8
+Enter a double: 2.5
+2.50
+Enter a double: 6.6
+6.60
+Enter a double: 7.2
+7.20
+Enter some text: manuel
+manuel
+Enter some text: israel 
+israel
+Enter some text: de aguinaga
+de aguinaga
+
+largest integer is 8
+largest double is 7.20
+longest string is de aguinaga

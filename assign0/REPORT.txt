@@ -1,0 +1,16 @@
+1 People that worked with : Alberto Jasso, Mark Pena
+Mark Pena: large
+Alberto Jasso: large
+We were discuting how to use dinamic alocation memory for this project, at the begining we want to use linked list, however we deside to use size_t and ssize_t.
+Then the next point to discuse was how to get the information from the terminal and from the file.
+We work as a team answering questions one from each other, I think we bering the a lot of healp to get this assigment done, since no one of did not know how to do the make file and had some complications with C programming language, we where giving and geting help.
+
+2. Do you think everything you did is correct?
+Yes, I think everithing on this program is correct, including follow the programming style guidelines, and SOLID prinsipals
+
+3. If not, give a brief description of what is working and what progress was made on the part that is not working. 
+n/a
+
+4. Comments (e.g., what were the challenges, how to make this assignment more interesting etc.):
+All this assigment was very challeng, since most of this staff we had to figure out how to do it.
+This assignment will be more interesting if more details explanation were giving and if we had have a class (course) how to use some tools (MAKEFILES, DRIVERS, DEVOGERS, size_t, etc) first learn, then apply knowdlage.
