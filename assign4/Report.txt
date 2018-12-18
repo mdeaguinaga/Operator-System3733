@@ -1,0 +1,613 @@
+Manuel I. De Aguianaga
+uyi362
+-------------------PART 1-----------------------
+
+RUNNING WITH 5
+
+fox02:~/cs3733/assign4> ./assign4-part1 5
+Assignment 4: # of threads = 5
+This is philosopher 0
+This is philosopher 1
+This is philosopher 2
+This is philosopher 3
+This is philosopher 4
+5 threads have been completed/joined successfully!
+
+RUNNING WITH 20
+
+ssignment 4: # of threads = 20
+This is philosopher 0
+This is philosopher 1
+This is philosopher 2
+This is philosopher 3
+This is philosopher 4
+This is philosopher 5
+This is philosopher 6
+This is philosopher 7
+This is philosopher 8
+This is philosopher 9
+This is philosopher 10
+This is philosopher 11
+This is philosopher 12
+This is philosopher 13
+This is philosopher 14
+This is philosopher 15
+This is philosopher 16
+This is philosopher 17
+This is philosopher 18
+This is philosopher 19
+20 threads have been completed/joined successfully!
+
+In the line 50 I used pthread_join(tid[j], NULL )) so it can wait for each peocess
+if(error = pthread_join(tid[j], NULL ))
+{
+    fprintf (stderr, "Fail to join thread %s\n.", strerror(error));
+    return;
+}
+using a forloop that runs and join each process.
+
+
+--------------------PART 2---------------------------
+
+RUNNING WITH 5
+
+Assignment 4: # of threads = 5
+Philosopher 1 is thinking
+Philosopher 2 is thinking
+Philosopher 1 end thinking
+Philosopher 1 pick up chopstick 5 and 1
+Philosopher 1 start eating
+Philosopher 3 is thinking
+Philosopher 3 end thinking
+Philosopher 3 pick up chopstick 2 and 3
+Philosopher 3 start eating
+Philosopher 4 is thinking
+Philosopher 5 is thinking
+Philosopher 3 put down chopstick 2 and 3 
+Philosopher 3 end eating
+Philosopher 3 start thinking
+Philosopher 4 end thinking
+Philosopher 4 pick up chopstick 3 and 4
+Philosopher 4 start eating
+Philosopher 1 put down chopstick 5 and 1 
+Philosopher 1 end eating
+Philosopher 1 start thinking
+Philosopher 2 end thinking
+Philosopher 2 pick up chopstick 1 and 2
+Philosopher 2 start eating
+Philosopher 4 put down chopstick 3 and 4 
+Philosopher 4 end eating
+Philosopher 4 start thinking
+Philosopher 5 end thinking
+Philosopher 5 pick up chopstick 4 and 5
+Philosopher 5 start eating
+Philosopher 2 put down chopstick 1 and 2 
+Philosopher 2 end eating
+Philosopher 2 start thinking
+Philosopher 5 put down chopstick 4 and 5 
+Philosopher 5 end eating
+Philosopher 5 start thinking
+5 threads have been completed/joined successfully!
+
+
+RUNNING WITH 20
+
+Assignment 4: # of threads = 20
+Philosopher 1 is thinking
+Philosopher 1 end thinking
+Philosopher 2 is thinking
+Philosopher 3 is thinking
+Philosopher 4 is thinking
+Philosopher 5 is thinking
+Philosopher 6 is thinking
+Philosopher 7 is thinking
+Philosopher 8 is thinking
+Philosopher 9 is thinking
+Philosopher 10 is thinking
+Philosopher 11 is thinking
+Philosopher 12 is thinking
+Philosopher 13 is thinking
+Philosopher 14 is thinking
+Philosopher 15 is thinking
+Philosopher 16 is thinking
+Philosopher 17 is thinking
+Philosopher 18 is thinking
+Philosopher 19 is thinking
+Philosopher 20 is thinking
+Philosopher 1 pick up chopstick 20 and 1
+Philosopher 1 start eating
+Philosopher 3 end thinking
+Philosopher 3 pick up chopstick 2 and 3
+Philosopher 3 start eating
+Philosopher 5 end thinking
+Philosopher 5 pick up chopstick 4 and 5
+Philosopher 5 start eating
+Philosopher 8 end thinking
+Philosopher 8 pick up chopstick 7 and 8
+Philosopher 8 start eating
+Philosopher 10 end thinking
+Philosopher 10 pick up chopstick 9 and 10
+Philosopher 10 start eating
+Philosopher 12 end thinking
+Philosopher 12 pick up chopstick 11 and 12
+Philosopher 12 start eating
+Philosopher 14 end thinking
+Philosopher 14 pick up chopstick 13 and 14
+Philosopher 14 start eating
+Philosopher 18 end thinking
+Philosopher 18 pick up chopstick 17 and 18
+Philosopher 18 start eating
+Philosopher 16 end thinking
+Philosopher 16 pick up chopstick 15 and 16
+Philosopher 16 start eating
+Philosopher 1 put down chopstick 20 and 1 
+Philosopher 1 end eating
+Philosopher 1 start thinking
+Philosopher 20 end thinking
+Philosopher 20 pick up chopstick 19 and 20
+Philosopher 20 start eating
+Philosopher 3 put down chopstick 2 and 3 
+Philosopher 3 end eating
+Philosopher 3 start thinking
+Philosopher 2 end thinking
+Philosopher 2 pick up chopstick 1 and 2
+Philosopher 2 start eating
+Philosopher 14 put down chopstick 13 and 14 
+Philosopher 14 end eating
+Philosopher 14 start thinking
+Philosopher 16 put down chopstick 15 and 16 
+Philosopher 16 end eating
+Philosopher 16 start thinking
+Philosopher 15 end thinking
+Philosopher 15 pick up chopstick 14 and 15
+Philosopher 15 start eating
+Philosopher 10 put down chopstick 9 and 10 
+Philosopher 10 end eating
+Philosopher 10 start thinking
+Philosopher 20 put down chopstick 19 and 20 
+Philosopher 20 end eating
+Philosopher 20 start thinking
+Philosopher 8 put down chopstick 7 and 8 
+Philosopher 8 end eating
+Philosopher 8 start thinking
+Philosopher 7 end thinking
+Philosopher 7 pick up chopstick 6 and 7
+Philosopher 7 start eating
+Philosopher 9 end thinking
+Philosopher 9 pick up chopstick 8 and 9
+Philosopher 9 start eating
+Philosopher 5 put down chopstick 4 and 5 
+Philosopher 5 end eating
+Philosopher 5 start thinking
+Philosopher 4 end thinking
+Philosopher 4 pick up chopstick 3 and 4
+Philosopher 4 start eating
+Philosopher 2 put down chopstick 1 and 2 
+Philosopher 2 end eating
+Philosopher 2 start thinking
+Philosopher 12 put down chopstick 11 and 12 
+Philosopher 12 end eating
+Philosopher 12 start thinking
+Philosopher 11 end thinking
+Philosopher 11 pick up chopstick 10 and 11
+Philosopher 11 start eating
+Philosopher 13 end thinking
+Philosopher 13 pick up chopstick 12 and 13
+Philosopher 13 start eating
+Philosopher 7 put down chopstick 6 and 7 
+Philosopher 7 end eating
+Philosopher 7 start thinking
+Philosopher 6 end thinking
+Philosopher 6 pick up chopstick 5 and 6
+Philosopher 6 start eating
+Philosopher 4 put down chopstick 3 and 4 
+Philosopher 4 end eating
+Philosopher 4 start thinking
+Philosopher 15 put down chopstick 14 and 15 
+Philosopher 15 end eating
+Philosopher 15 start thinking
+Philosopher 18 put down chopstick 17 and 18 
+Philosopher 18 end eating
+Philosopher 18 start thinking
+Philosopher 17 end thinking
+Philosopher 17 pick up chopstick 16 and 17
+Philosopher 17 start eating
+Philosopher 19 end thinking
+Philosopher 19 pick up chopstick 18 and 19
+Philosopher 19 start eating
+Philosopher 13 put down chopstick 12 and 13 
+Philosopher 13 end eating
+Philosopher 13 start thinking
+Philosopher 9 put down chopstick 8 and 9 
+Philosopher 9 end eating
+Philosopher 9 start thinking
+Philosopher 11 put down chopstick 10 and 11 
+Philosopher 11 end eating
+Philosopher 11 start thinking
+Philosopher 6 put down chopstick 5 and 6 
+Philosopher 6 end eating
+Philosopher 6 start thinking
+Philosopher 19 put down chopstick 18 and 19 
+Philosopher 19 end eating
+Philosopher 19 start thinking
+Philosopher 17 put down chopstick 16 and 17 
+Philosopher 17 end eating
+Philosopher 17 start thinking
+20 threads have been completed/joined successfully!
+
+NUMBER OF DEADLOCKS = 0
+
+----------------------PART 3------------------------
+
+
+RUNNING WITH 5
+
+Assignment 4: # of threads = 5
+Philosopher 1 is thinking
+Philosopher 1 end thinking
+Philosopher 1 takes chopstick 5 and 1
+Philosopher 1 start eating
+Philosopher 2 is thinking
+Philosopher 3 is thinking
+Philosopher 4 is thinking
+Philosopher 5 is thinking
+Philosopher 1 putting chopstick 5 and 1 down
+Philosopher 1 end eating
+Philosopher 1 start thinking
+Philosopher 2 end thinking
+Philosopher 2 takes chopstick 1 and 2
+Philosopher 2 start eating
+Philosopher 2 putting chopstick 1 and 2 down
+Philosopher 2 end eating
+Philosopher 2 start thinking
+Philosopher 3 end thinking
+Philosopher 3 takes chopstick 2 and 3
+Philosopher 3 start eating
+Philosopher 3 putting chopstick 2 and 3 down
+Philosopher 3 end eating
+Philosopher 3 start thinking
+Philosopher 4 end thinking
+Philosopher 4 takes chopstick 3 and 4
+Philosopher 4 start eating
+Philosopher 4 putting chopstick 3 and 4 down
+Philosopher 4 end eating
+Philosopher 4 start thinking
+Philosopher 5 end thinking
+Philosopher 5 takes chopstick 4 and 5
+Philosopher 5 start eating
+Philosopher 5 putting chopstick 4 and 5 down
+Philosopher 5 end eating
+Philosopher 5 start thinking
+5 threads have been completed/joined successfully!
+
+
+RUNNING WITH 20
+
+
+Assignment 4: # of threads = 20
+Philosopher 1 is thinking
+Philosopher 1 end thinking
+Philosopher 1 takes chopstick 20 and 1
+Philosopher 1 start eating
+Philosopher 2 is thinking
+Philosopher 3 is thinking
+Philosopher 4 is thinking
+Philosopher 5 is thinking
+Philosopher 6 is thinking
+Philosopher 7 is thinking
+Philosopher 8 is thinking
+Philosopher 9 is thinking
+Philosopher 10 is thinking
+Philosopher 11 is thinking
+Philosopher 12 is thinking
+Philosopher 13 is thinking
+Philosopher 14 is thinking
+Philosopher 15 is thinking
+Philosopher 16 is thinking
+Philosopher 17 is thinking
+Philosopher 18 is thinking
+Philosopher 19 is thinking
+Philosopher 20 is thinking
+Philosopher 1 putting chopstick 20 and 1 down
+Philosopher 1 end eating
+Philosopher 1 start thinking
+Philosopher 2 end thinking
+Philosopher 2 takes chopstick 1 and 2
+Philosopher 2 start eating
+Philosopher 2 putting chopstick 1 and 2 down
+Philosopher 2 end eating
+Philosopher 2 start thinking
+Philosopher 3 end thinking
+Philosopher 3 takes chopstick 2 and 3
+Philosopher 3 start eating
+Philosopher 3 putting chopstick 2 and 3 down
+Philosopher 3 end eating
+Philosopher 3 start thinking
+Philosopher 4 end thinking
+Philosopher 4 takes chopstick 3 and 4
+Philosopher 4 start eating
+Philosopher 4 putting chopstick 3 and 4 down
+Philosopher 4 end eating
+Philosopher 4 start thinking
+Philosopher 5 end thinking
+Philosopher 5 takes chopstick 4 and 5
+Philosopher 5 start eating
+Philosopher 5 putting chopstick 4 and 5 down
+Philosopher 5 end eating
+Philosopher 5 start thinking
+Philosopher 6 end thinking
+Philosopher 6 takes chopstick 5 and 6
+Philosopher 6 start eating
+Philosopher 6 putting chopstick 5 and 6 down
+Philosopher 6 end eating
+Philosopher 6 start thinking
+Philosopher 7 end thinking
+Philosopher 7 takes chopstick 6 and 7
+Philosopher 7 start eating
+Philosopher 7 putting chopstick 6 and 7 down
+Philosopher 7 end eating
+Philosopher 7 start thinking
+Philosopher 8 end thinking
+Philosopher 8 takes chopstick 7 and 8
+Philosopher 8 start eating
+Philosopher 8 putting chopstick 7 and 8 down
+Philosopher 8 end eating
+Philosopher 8 start thinking
+Philosopher 9 end thinking
+Philosopher 9 takes chopstick 8 and 9
+Philosopher 9 start eating
+Philosopher 9 putting chopstick 8 and 9 down
+Philosopher 9 end eating
+Philosopher 9 start thinking
+Philosopher 10 end thinking
+Philosopher 10 takes chopstick 9 and 10
+Philosopher 10 start eating
+Philosopher 10 putting chopstick 9 and 10 down
+Philosopher 10 end eating
+Philosopher 10 start thinking
+Philosopher 11 end thinking
+Philosopher 11 takes chopstick 10 and 11
+Philosopher 11 start eating
+Philosopher 11 putting chopstick 10 and 11 down
+Philosopher 11 end eating
+Philosopher 11 start thinking
+Philosopher 12 end thinking
+Philosopher 12 takes chopstick 11 and 12
+Philosopher 12 start eating
+Philosopher 12 putting chopstick 11 and 12 down
+Philosopher 12 end eating
+Philosopher 12 start thinking
+Philosopher 13 end thinking
+Philosopher 13 takes chopstick 12 and 13
+Philosopher 13 start eating
+Philosopher 13 putting chopstick 12 and 13 down
+Philosopher 13 end eating
+Philosopher 13 start thinking
+Philosopher 14 end thinking
+Philosopher 14 takes chopstick 13 and 14
+Philosopher 14 start eating
+Philosopher 14 putting chopstick 13 and 14 down
+Philosopher 14 end eating
+Philosopher 14 start thinking
+Philosopher 15 end thinking
+Philosopher 15 takes chopstick 14 and 15
+Philosopher 15 start eating
+Philosopher 15 putting chopstick 14 and 15 down
+Philosopher 15 end eating
+Philosopher 15 start thinking
+Philosopher 16 end thinking
+Philosopher 16 takes chopstick 15 and 16
+Philosopher 16 start eating
+Philosopher 16 putting chopstick 15 and 16 down
+Philosopher 16 end eating
+Philosopher 16 start thinking
+Philosopher 17 end thinking
+Philosopher 17 takes chopstick 16 and 17
+Philosopher 17 start eating
+Philosopher 17 putting chopstick 16 and 17 down
+Philosopher 17 end eating
+Philosopher 17 start thinking
+Philosopher 18 end thinking
+Philosopher 18 takes chopstick 17 and 18
+Philosopher 18 start eating
+Philosopher 18 putting chopstick 17 and 18 down
+Philosopher 18 end eating
+Philosopher 18 start thinking
+Philosopher 19 end thinking
+Philosopher 19 takes chopstick 18 and 19
+Philosopher 19 start eating
+Philosopher 19 putting chopstick 18 and 19 down
+Philosopher 19 end eating
+Philosopher 19 start thinking
+Philosopher 20 end thinking
+Philosopher 20 takes chopstick 19 and 20
+Philosopher 20 start eating
+Philosopher 20 putting chopstick 19 and 20 down
+Philosopher 20 end eating
+Philosopher 20 start thinking
+20 threads have been completed/joined successfully!
+
+
+----------------------PART 4------------------------
+
+
+RUNNING WITH 5
+
+Assignment 4: # of threads = 5
+Philosopher 1 is thinking
+Philosopher 2 is thinking
+Philosopher 3 is thinking
+Philosopher 4 is thinking
+Philosopher 5 is thinking
+Philosopher 4 end thinking
+Philosopher 4 picked up chopsticks 3 and 4
+Philosopher 4 start eating
+Philosopher 4 finished eating
+Philosopher 4 put down chopstick 3 and 4 
+Philosopher 2 end thinking
+Philosopher 2 picked up chopsticks 1 and 2
+Philosopher 2 start eating
+Philosopher 3 end thinking
+Philosopher 3 picked up chopsticks 2 and 3
+Philosopher 3 start eating
+Philosopher 2 finished eating
+Philosopher 2 put down chopstick 1 and 2 
+Philosopher 3 finished eating
+Philosopher 3 put down chopstick 2 and 3 
+Philosopher 1 end thinking
+Philosopher 1 picked up chopsticks 5 and 1
+Philosopher 1 start eating
+Philosopher 1 finished eating
+Philosopher 1 put down chopstick 5 and 1 
+Philosopher 5 end thinking
+Philosopher 5 picked up chopsticks 4 and 5
+Philosopher 5 start eating
+Philosopher 5 finished eating
+Philosopher 5 put down chopstick 4 and 5 
+5 threads have been completed/joined successfully!
+
+
+
+RUNNING WITH 20
+
+ssignment 4: # of threads = 20
+Philosopher 1 is thinking
+Philosopher 2 is thinking
+Philosopher 3 is thinking
+Philosopher 4 is thinking
+Philosopher 5 is thinking
+Philosopher 6 is thinking
+Philosopher 7 is thinking
+Philosopher 8 is thinking
+Philosopher 9 is thinking
+Philosopher 10 is thinking
+Philosopher 11 is thinking
+Philosopher 12 is thinking
+Philosopher 13 is thinking
+Philosopher 14 is thinking
+Philosopher 14 end thinking
+Philosopher 14 picked up chopsticks 13 and 14
+Philosopher 14 start eating
+Philosopher 15 is thinking
+Philosopher 16 is thinking
+Philosopher 17 is thinking
+Philosopher 18 is thinking
+Philosopher 19 is thinking
+Philosopher 20 is thinking
+Philosopher 10 end thinking
+Philosopher 10 picked up chopsticks 9 and 10
+Philosopher 10 start eating
+Philosopher 11 end thinking
+Philosopher 11 picked up chopsticks 10 and 11
+Philosopher 11 start eating
+Philosopher 1 end thinking
+Philosopher 1 picked up chopsticks 20 and 1
+Philosopher 1 start eating
+Philosopher 14 finished eating
+Philosopher 14 put down chopstick 13 and 14 
+Philosopher 16 end thinking
+Philosopher 16 picked up chopsticks 15 and 16
+Philosopher 16 start eating
+Philosopher 2 end thinking
+Philosopher 2 picked up chopsticks 1 and 2
+Philosopher 2 start eating
+Philosopher 7 end thinking
+Philosopher 7 picked up chopsticks 6 and 7
+Philosopher 7 start eating
+Philosopher 15 end thinking
+Philosopher 15 picked up chopsticks 14 and 15
+Philosopher 15 start eating
+Philosopher 16 finished eating
+Philosopher 16 put down chopstick 15 and 16 
+Philosopher 7 finished eating
+Philosopher 7 put down chopstick 6 and 7 
+Philosopher 10 finished eating
+Philosopher 11 finished eating
+Philosopher 11 put down chopstick 10 and 11 
+Philosopher 9 end thinking
+Philosopher 9 picked up chopsticks 8 and 9
+Philosopher 9 start eating
+Philosopher 10 put down chopstick 9 and 10 
+Philosopher 12 end thinking
+Philosopher 12 picked up chopsticks 11 and 12
+Philosopher 15 finished eating
+Philosopher 15 put down chopstick 14 and 15 
+Philosopher 17 end thinking
+Philosopher 17 picked up chopsticks 16 and 17
+Philosopher 17 start eating
+Philosopher 13 end thinking
+Philosopher 13 picked up chopsticks 12 and 13
+Philosopher 13 start eating
+Philosopher 12 start eating
+Philosopher 8 end thinking
+Philosopher 8 picked up chopsticks 7 and 8
+Philosopher 8 start eating
+Philosopher 18 end thinking
+Philosopher 18 picked up chopsticks 17 and 18
+Philosopher 18 start eating
+Philosopher 1 finished eating
+Philosopher 1 put down chopstick 20 and 1 
+Philosopher 5 end thinking
+Philosopher 5 picked up chopsticks 4 and 5
+Philosopher 5 start eating
+Philosopher 12 finished eating
+Philosopher 12 put down chopstick 11 and 12 
+Philosopher 8 finished eating
+Philosopher 8 put down chopstick 7 and 8 
+Philosopher 2 finished eating
+Philosopher 2 put down chopstick 1 and 2 
+Philosopher 4 end thinking
+Philosopher 4 picked up chopsticks 3 and 4
+Philosopher 4 start eating
+Philosopher 9 finished eating
+Philosopher 9 put down chopstick 8 and 9 
+Philosopher 13 finished eating
+Philosopher 13 put down chopstick 12 and 13 
+Philosopher 5 finished eating
+Philosopher 5 put down chopstick 4 and 5 
+Philosopher 3 end thinking
+Philosopher 3 picked up chopsticks 2 and 3
+Philosopher 3 start eating
+Philosopher 4 finished eating
+Philosopher 4 put down chopstick 3 and 4 
+Philosopher 6 end thinking
+Philosopher 6 picked up chopsticks 5 and 6
+Philosopher 6 start eating
+Philosopher 17 finished eating
+Philosopher 17 put down chopstick 16 and 17 
+Philosopher 19 end thinking
+Philosopher 19 picked up chopsticks 18 and 19
+Philosopher 19 start eating
+Philosopher 18 finished eating
+Philosopher 18 put down chopstick 17 and 18 
+Philosopher 20 end thinking
+Philosopher 20 picked up chopsticks 19 and 20
+Philosopher 20 start eating
+Philosopher 20 finished eating
+Philosopher 20 put down chopstick 19 and 20 
+Philosopher 3 finished eating
+Philosopher 3 put down chopstick 2 and 3 
+Philosopher 19 finished eating
+Philosopher 19 put down chopstick 18 and 19 
+Philosopher 6 finished eating
+Philosopher 6 put down chopstick 5 and 6 
+20 threads have been completed/joined successfully!
+
+The way how I solve deadlock problem is bu using two while loops in pickupChopsticks function
+using two whiloops that will hold the value while all the threads go trough, the thread will be
+waiting for the choppstic to be available and then it will be using it. The chopstics will be available
+and the thread will be free to continue with the process.
+
+-----------------------REPORT--------------------------
+
+1. Albert Jasso (small).
+We were working on how to pass the information in the structure, but since I did not use an 
+structure, we just be sharing ideas.
+
+2. I think everything is correct
+
+3. Everithing showld be working fine, I run each program more than 100 times and there was no error or deadlocks.
+
+4. the challenges past was to know what to use in order to be able to pass the informatin using threads, at the begining I was using a structure but then I use a global variable.
+I thing this assigment is interesting enough, I spend some time making it.
+
